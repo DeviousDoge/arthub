@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS arthub_db;
+CREATE DATABASE arthub_db;
