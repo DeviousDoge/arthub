@@ -32,7 +32,7 @@ User.belongsToMany(Project, {
         model: Collaborator,
         unique: false
     }
-
+});
 Project.hasMany(User, {
     foreignKey: 'collaborator'
 
