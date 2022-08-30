@@ -1,7 +1,9 @@
 const User = require('./User');
 const Project = require('./Project');
 const Comment = require('./Comment');
+
 const Collaborator = require('./Collaborator')
+
 // A user can own many projects
 User.hasMany(Project, {
     foreignKey: 'user_id',
@@ -17,6 +19,7 @@ Project.belongsTo(User, {
     foreignKey: 'user_id'
 });
 // A project can reference many users as a collaborator
+
 Project.belongsToMany(User, {
     through: {
         model: Collaborator,
@@ -29,6 +32,10 @@ User.belongsToMany(Project, {
         model: Collaborator,
         unique: false
     }
+
+Project.hasMany(User, {
+    foreignKey: 'collaborator'
+
 });
 // A comment always belongs to one user
 Comment.belongsTo(User, {
