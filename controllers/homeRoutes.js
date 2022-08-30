@@ -4,5 +4,7 @@ const router = require('express').Router();
 
 router.get("/",(req, res) => {
 res.render("profilepage")
+res.render("commentpage")
+res.render("signin")
 })
 module.exports=router
