@@ -29,6 +29,7 @@ Project.init(
         model: 'user',
         key: 'id',
       },
+
     },
     collaborator: {
       type: DataTypes.INTEGER,
@@ -36,6 +37,7 @@ Project.init(
         model: 'user',
         key: 'id',
       },
+
     }
   },
   {
