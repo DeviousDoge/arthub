@@ -29,13 +29,6 @@ Project.init(
         model: 'user',
         key: 'id',
       },
-    },
-    collaborator: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
     }
   },
   {
