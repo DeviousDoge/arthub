@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Project, Comment, Collaborator, User } = require('../models');
 const withAuth = require('../utils/auth');
 
+
 router.get("/", (req, res) => {
     try {
         // Get all projects and JOIN with user data
@@ -49,3 +50,16 @@ router.get('/project/:id', async (req, res) => {
     }
 });
 module.exports = router
+
+router.get("/",(req, res) => {
+
+res.render("profilepage")
+res.render("commentpage")
+res.render("signin")
+})
+module.exports=router
+
+    res.render("profilepage")
+})
+
+module.exports=router
