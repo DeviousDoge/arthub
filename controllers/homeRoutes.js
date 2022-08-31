@@ -41,8 +41,14 @@ module.exports = router;
 // const withAuth = require('../utils/auth');
 
 router.get("/",(req, res) => {
-    res.render("profilepage")
-})
 
+res.render("profilepage")
+res.render("commentpage")
+res.render("signin")
+})
 module.exports=router
 
+    res.render("profilepage");
+
+
+module.exports=router
