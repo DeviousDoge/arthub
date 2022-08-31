@@ -11,9 +11,11 @@ Comment.init(
       primaryKey: true,
       autoIncrement: true,
     },
+
     comment_text: {
       type: DataTypes.STRING,
     },
+
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,
@@ -33,14 +35,14 @@ Comment.init(
           key: 'id',
         },
       },
-  },
-  {
+  
+  
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: 'comment',
-  }
+    }
 );
 
 module.exports = Comment;
