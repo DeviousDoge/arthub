@@ -1,0 +1,38 @@
+[
+  {
+    "comment_text": "Love it! Want to join forces!",
+    "date_created": "June 20, 2022",
+    "post_id": 3,
+    "user_id": 1
+  },
+  {
+    "comment_text": "LETS COLLAB!!!",
+    "date_created": "June 20, 2022",
+    "post_id": 1,
+    "user_id": 4
+  },
+  {
+    "comment_text": "Looking forward to your next project.",
+    "date_created": "June 20, 2022",
+    "project_id": 4,
+    "user_id": 2
+  },
+  {
+    "comment_text": "Great. Now I'm hungry for cookies.",
+    "date_created": "June 20, 2022",
+    "project_id": 4,
+    "user_id": 3
+  },
+  {
+    "comment_text": "?",
+    "date_created": "June 20, 2022",
+    "project_id": 5,
+    "user_id": 5
+  },
+  {
+    "comment_text": "Yeah! This look amazing.",
+    "date_created": "June 20, 2022",
+    "project_id": 5,
+    "user_id": 4
+  }
+]
