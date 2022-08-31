@@ -13,14 +13,14 @@ const seedDatabase = async () => {
 
   await Collaborator.bulkCreate(collaboratorData);
 
-  await User.bulkCreate(userData, {
+  const users = await User.bulkCreate(userData, {
     individualHooks: true,
     returning: true,
   });
 for (const project of projectData){
   await Project.create({
     ...project,
-    user_id: user[Math,floor(Math.random() * users.length)].id,
+    user_id: users[Math.floor(Math.random() * users.length)].id,
   });
 }
   process.exit(0);
