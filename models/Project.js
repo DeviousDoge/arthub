@@ -11,7 +11,7 @@ Project.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -29,14 +29,16 @@ Project.init(
         model: 'user',
         key: 'id',
       },
+
     },
-    comment_id: {
-        type: DataTypes.INTEGER,
-        references: {
-          model: 'comment',
-          key: 'id',
-        },
+    collaborator: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
       },
+
+    }
   },
   {
     sequelize,
