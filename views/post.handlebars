@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,19 +6,14 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
 
-  <style>
-      body{
-        background: rgb(224,159,232);
-      background: radial-gradient(circle, rgba(224,159,232,1) 0%, rgba(232,214,218,1) 100%);
-      }
-    * {
-     font-family: "Alice"
-      }
-    </style>
+
+
 
 <body>
-
 <header>
   <div class="collapse bg-light" id="navbarHeader">
     <div class="container">
@@ -52,17 +46,26 @@
   </div>
 </header>
 
-<hr>
-    <div class="text-center">
-  <a href="https://placeholder.com"><img src="https://via.placeholder.com/300"></a>
+ <style>
+      body{
+        background: rgb(224,159,232);
+      background: radial-gradient(circle, rgba(224,159,232,1) 0%, rgba(232,214,218,1) 100%);
+      }
+    * {
+     font-family: "Alice"
+      }
+    </style>
+
+<div>
+  <label for="formFileLg" class="form-label">Submit a new Project!</label>
+  <input class="form-control form-control-lg w-50" id="formFileLg" type="file">
 </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  
-<hr>
-<div class="mb-3 w-50">
-  <label for="exampleFormControlTextarea1" class="form-label">Leave a Comment</label>
+
+<div class="mb-3 w-75">
+  <label for="exampleFormControlTextarea1" class="form-label">Leave a Description</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
+<button type="button" class="btn btn-light m-2">Post</button>
 
 <nav class="navbar bg-light position-absolute bottom-0 w-100">
   <div class="container-fluid">
@@ -73,12 +76,8 @@
     </form>
   </div>
 </nav>
-  
+
+
 </body>
+
 </html>
-
-
-
-
-
-
