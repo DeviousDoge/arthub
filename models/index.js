@@ -47,4 +47,4 @@ Comment.belongsTo(Project, {
 });
 
 
-module.exports = { User, Project, Comment };
+module.exports = { User, Project, Comment, Collaborator };
