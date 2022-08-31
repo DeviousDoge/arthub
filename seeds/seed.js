@@ -6,8 +6,15 @@ const projectData = require('./projectData.json');
 const commentData = require('./commentData.json');
 const collaboratorData = require('./collaboratorData.json');
 
+
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
+
+
+  await Comment.bulkCreate(commentData);
+
+  await Collaborator.bulkCreate(collaboratorData);
+
 
   const users = await User.bulkCreate(userData, {
     individualHooks: true,
