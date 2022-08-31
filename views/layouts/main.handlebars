@@ -44,28 +44,40 @@
         <img src="/assets/logo.jpg" alt="logo">
         <strong class="text-black">ArtHub</strong>
       </a>
+      <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        <a href="/profile">profile</a> |
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
       <button class="navbar-toggler bg-black" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
+    
   </div>
+  
 </header>
  <br>
 
+        
+     
   <main>
     <div class="gallery">
       {{{body}}}
     </div>
   </main>
-  {{#if loggedIn}}
+  
+<!-- Render script for logged in users only -->
+  {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
-
 </body>
   <footer>
     <nav class="navbar bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand">ArtHub</a>
+    <a class="navbar-brand"><strong>ArtHub</strong></a>
     <form class="d-flex" role="search">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success" type="submit">Search</button>
