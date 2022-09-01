@@ -3,7 +3,7 @@ const { Project, Comment, Collaborator, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 
-router.get("/", (req, res) => {
+router.get("/", async (req, res) => {
     try {
         // Get all projects and JOIN with user data
         const projectData = await Project.findAll({
@@ -76,6 +76,6 @@ router.get('/profile', withAuth, async (req, res) => {
       return;
     }
   
-    res.render('login');
+    res.render('signin');
   });
 module.exports = router
