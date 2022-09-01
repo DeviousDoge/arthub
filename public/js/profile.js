@@ -3,8 +3,8 @@
 const newFormHandler = async (event) => {
     event.preventDefault();
   
-    const title = document.querySelector('#project-name').value.trim();
-    const description = document.querySelector('#project-desc').value.trim();
+    const title = document.querySelector('#titletext').value.trim();
+    const description = document.querySelector('#descriptiontext').value.trim();
   
     if (title && description) {
       const response = await fetch(`/api/projects`, {
@@ -40,7 +40,7 @@ const newFormHandler = async (event) => {
   };
   
   document
-    .querySelector('.new-project-form')
+    .querySelector('#newcontent')
     .addEventListener('submit', newFormHandler);
   
   document
