@@ -11,7 +11,7 @@ Project.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    img_file: {
+    uploadURL: {
       type: DataTypes.STRING
     },
     title: {
