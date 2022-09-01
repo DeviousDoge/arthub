@@ -23,11 +23,8 @@ for (const project of projectData){
     user_id: users[Math.floor(Math.random() * users.length)].id,
   });
 }
-await Comment.bulkCreate(commentData);
-
 await Collaborator.bulkCreate(collaboratorData);
-
-
+await Comment.bulkCreate(commentData);
   process.exit(0);
 };
 
