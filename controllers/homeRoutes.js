@@ -76,6 +76,6 @@ router.get('/profile', withAuth, async (req, res) => {
       return;
     }
   
-    res.render('login');
+    res.render('signin');
   });
 module.exports = router
