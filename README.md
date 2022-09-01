@@ -8,7 +8,7 @@
 
 [Screenshots](#screenshots)
 
-[Tools Used to Create Projec](#tools-used-to-create-project)
+[Technologies Used](#technologies-used)
 
 [All Contributors](#all-contributors)
 
@@ -16,17 +16,35 @@
 
 ## Description
 
-This project was created to create a blog site similar to Wordpress site, using Handlebars.js as the templating language, Sequelize as the ORM, express-session npm package for authentication, and deploy it to Heroku.
+We wanted to create an interactive platform for artists to be able to communicate and collaborate on different projects in one place. There is a home page to view artwork from artists you are following with the ability to like and comment on it. In the description, the user is able to choose a category of art collaboration they would like to have with another artist. For example, a video editor looking for music to add to a film. It also has a login page where you can login to your account and edit your profile to include your website, past artworks posted, and additional personal information.
 
 ## Usage
 
-CMS-style blog site, can publish articles, blog posts, and user's thoughts and opinions post.
+- As a contributing artist, I want to be able to post my art creations, and have it populate my home page.
 
-User can also comment on other developers' post.
+- As a viewing artist viewing a post, I want to view someone’s home page, and be redirected to a specific post I click on.
+
+- As a viewing artist, I want to be able to make a comment on other artists’ posts and add an emoji reaction.
+
+- As an artist, I want to post my artwork and have my personal contact information in my profile page.
+
+- As an artist, I want to be able to search for other collaborators based on location or art category.
 
 ## Screenshots
 
-## Tools Used to Create Project
+## Technologies Used
+
+- Node.js & Express.js
+
+- Handlebars.js as the templating engine
+
+- MySQL & Sequelize ORM for database
+
+- Deployed using Heroku
+
+- Cloudinary
+
+- npm package
 
 ## All Contributors
 
