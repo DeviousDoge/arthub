@@ -11,10 +11,6 @@ const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
 
-  await Comment.bulkCreate(commentData);
-
-  await Collaborator.bulkCreate(collaboratorData);
-
 
   const users = await User.bulkCreate(userData, {
     individualHooks: true,
@@ -27,6 +23,11 @@ for (const project of projectData){
     user_id: users[Math.floor(Math.random() * users.length)].id,
   });
 }
+await Comment.bulkCreate(commentData);
+
+await Collaborator.bulkCreate(collaboratorData);
+
+
   process.exit(0);
 };
 
