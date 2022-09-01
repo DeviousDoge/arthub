@@ -34,6 +34,18 @@ We wanted to create an interactive platform for artists to be able to communicat
 
 ## Technologies Used
 
+- Node.js & Express.js
+
+- Handlebars.js as the templating engine
+
+- MySQL & Sequelize ORM for database
+
+- Deployed using Heroku
+
+- Cloudinary
+
+- npm package
+
 ## All Contributors
 
   [Sean's GitHub](https://github.com/DeviousDoge)
