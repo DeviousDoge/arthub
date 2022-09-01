@@ -1,35 +1,10 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  </head>
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  </body>
-</html>
-
-
-  <style>
-      body{
-        background: rgb(224,159,232);
-      background: radial-gradient(circle, rgba(224,159,232,1) 0%, rgba(232,214,218,1) 100%);
-      }
-    * {
-     font-family: "Alice"
-      }
-    </style>
-
-  <link href="signin.css" rel="stylesheet">
-</head>
-
 <body class="text-center">
   
 <main class="form-signin w-50 m-auto">
-<form>
+<form id="signin-form">
   <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+<form>
+  <img src="/assets/logo.jpg" width="60" height="60" alt="logo">
   <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
   <div class="form-floating">
@@ -46,8 +21,8 @@
       <input type="checkbox" value="remember-me"> Remember me
     </label>
   </div>
-  <button class="w-100 btn btn-lg btn-light" class="sign-in-button" type="submit">Sign in</button>
+  <button class="w-100 btn btn-lg btn-light sign-in-button" type="submit">Sign in</button>
 </form>
 </main>
-
+<script src="./js/login.js"></script>
 </body>
