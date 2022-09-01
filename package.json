@@ -24,7 +24,9 @@
     "devDependencies": {
       "eslint": "^7.12.1",
       "eslint-config-prettier": "^6.15.0",
-      "prettier": "^2.1.2"
+      "prettier": "^2.1.2",
+      "cloudinary": "^1.25.1",
+      "dotenv": "^9.0.2"
     }
   }
   
