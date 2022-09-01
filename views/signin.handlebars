@@ -1,8 +1,8 @@
 <body class="text-center">
   
 <main class="form-signin w-50 m-auto">
-<form>
-  <img src="/assets/logo.jpg" width="60" height="60" alt="logo">
+<form id="signin-form">
+
   <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
   <div class="form-floating">
@@ -19,8 +19,32 @@
       <input type="checkbox" value="remember-me"> Remember me
     </label>
   </div>
-  <button class="w-100 btn btn-lg btn-light" class="sign-in-button" type="submit">Sign in</button>
+  <button class="w-100 btn btn-lg btn-light sign-in-button" type="submit">Sign in</button>
+</form>
+
+<form id="signup-form">
+
+  <h1 class="h3 mb-3 fw-normal">Please sign up!</h1>
+ <div class="form-floating">
+    <input type="input" class="form-control" id="name-signup" placeholder="John Smith">
+    <label for="name-signup">What is Your Name?</label>
+  </div>
+  <div class="form-floating">
+    <input type="email" class="form-control" id="email-signup" placeholder="name@example.com">
+    <label for="email-signup">What is Your Email address?</label>
+  </div>
+  <div class="form-floating">
+    <input type="password" class="form-control" id="password-signup" placeholder="Password">
+    <label for="password-signup">Choose Password</label>
+  </div>
+
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+  <button class="w-100 btn btn-lg btn-light sign-up-button" type="submit">Sign Up</button>
 </form>
 </main>
-
+<script src="./js/login.js"></script>
 </body>
