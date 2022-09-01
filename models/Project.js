@@ -11,6 +11,9 @@ Project.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    img_file: {
+      type: DataTypes.STRING
+    },
     title: {
       type: DataTypes.STRING,
       allowNull: false,
