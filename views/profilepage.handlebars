@@ -2,7 +2,7 @@
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-      <h1 class="fw-light">I am a Real Artist</h1>
+      <h1 class="fw-light">{{name}}</h1>
         <p class="lead text-muted">I'm an aspiring painter and sketch artist. Here is some of the work I'm
           most proud of.</p>
         </div>
@@ -15,16 +15,16 @@
     <div class="row mb-2">
       <div class="col-md-8">
         <p>{{user.name}}</p>
-        <p>{{title}}</p>
-         <p>{{description}}</p>
+        <p>{{project.title}}</p>
+         <p>{{project.description}}</p>
       </div>
       {{/each}}
     </div>
     {{/if}}
-<form id="newcontent">
+<div id="newcontent">
   <form id="uploadfile">
     <button id="upload_widget" class="cloudinary-button">Upload files</button>
-    <script type="text/javascript">
+    {{!-- <script type="text/javascript">
       var myWidget = cloudinary.createUploadWidget({
         cloudName: 'my_cloud_name',
         uploadPreset: 'my_preset'
@@ -38,25 +38,23 @@
       document.getElementById("upload_widget").addEventListener("click", function () {
         myWidget.open();
       }, false);
-    </script>
+    </script> --}}
   </form>
   <form id="newpost">
   <div class="mb-3 w-75">
     <label for="titletext" class="form-label">Title of Project</label>
     <textarea class="form-control" id="titletext" rows="3"></textarea>
   </div>
+  {{!-- <script src="./js/uploadFile.js"></script> --}}
+  
   <div class="mb-3 w-75">
     <label for="descriptiontext" class="form-label">Leave a Description</label>
     <textarea class="form-control" id="descriptiontext" rows="3"></textarea>
   </div>
   </form>
   <button type="button" class="btn btn-light m-2">Post</button>
-</form>
+</div>
+<script src="./js/profile.js"></script>
 </main>
 
-
-    <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-
-</body>
-</html>
 

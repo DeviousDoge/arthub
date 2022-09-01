@@ -18,14 +18,15 @@
         <p>{{user.name}}</p>
       
         <p>{{project.description}}</p>
-    
+        <p>{{project.uploadURL}}</p>
+        <img src="{{project.uploadURL}}" width="500" height="600">
         <p><a class="btn btn-secondary" href="/project/{{project.id}}">View »</a></p>
         
       </div>
 <hr>
 </main>
 
-    <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+   
 
 </body>
 {{/each}}
