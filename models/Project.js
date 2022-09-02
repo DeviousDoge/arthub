@@ -11,6 +11,9 @@ Project.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    uploadURL: {
+      type: DataTypes.STRING
+    },
     title: {
       type: DataTypes.STRING,
       allowNull: false,
