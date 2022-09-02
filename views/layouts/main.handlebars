@@ -25,16 +25,21 @@
   
   <div class="navbar navbar-dark bg-light shadow-sm">
     <div class="container">
-      <a href="/" class="navbar-brand d-flex align-items-center">
+      <a href="/" class="navbar-brand">
         <img src="/assets/logo.jpg" width="60" height="60" alt="logo">
         <strong class="text-black">ArtHub</strong>
       </a>
       <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        {{!-- <a href="/profile">Upload</a>  --}}
+        <div class="d-flex justify-content-end">
+        <button type="button" class="m-1 btn btn-primary" id="upload">Upload</button>
+        <br>
+        {{!-- <button class="no-button" id="logout">logout</button> --}}
+        <button type="button" class="m-1 btn btn-primary" id="logout">Logout</button>
         {{else}}
         <a href="/login">login</a>
+        </div>
         {{/if}}   
       </button>
     </div>
