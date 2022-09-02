@@ -32,6 +32,22 @@ We wanted to create an interactive platform for artists to be able to communicat
 
 ## Screenshots
 
+**Homepage**
+
+![homepage](/public/assets/homepage.png)
+
+**Login/Sign-in page**
+
+![login](/public/assets/login-signinpage.png)
+
+**Profile page**
+
+![load](/public/assets/profilepage.png)
+
+**Loading page**
+
+![load](/public/assets/loadingpage.png)
+
 ## Technologies Used
 
 - Node.js & Express.js
