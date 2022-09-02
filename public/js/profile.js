@@ -31,7 +31,7 @@ const newFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/profile');
+        document.location.replace('/');
         console.log(uploadURL);
       } else {
         alert('Failed to create project');
@@ -48,7 +48,7 @@ const newFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/profile');
+        document.location.redirect('/homepage');
       } else {
         alert('Failed to delete project');
       }
