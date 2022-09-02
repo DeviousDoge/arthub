@@ -3,14 +3,13 @@
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
       <h1 class="fw-light">{{name}}</h1>
-        <p class="lead text-muted">I'm an aspiring painter and sketch artist. Here is some of the work I'm
-          most proud of.</p>
+        <p class="lead text-muted">Post some masterpieces here.</p>
         </div>
     </div>
   </section>
 
   {{#if projects.length}}
-   <div class="col-md-6 project-list">
+   <div class="col-md-6 project-list d-flex flex-column align-items-center">
     {{#each projects as |project|}}
     <div class="row mb-2">
       <div class="col-md-8">
@@ -21,7 +20,7 @@
       {{/each}}
     </div>
     {{/if}}
-<div id="newcontent">
+<div class="col-md-12 d-flex flex-column align-items-center" id="newcontent">
   <form id="uploadfile">
     <button id="upload_widget" class="cloudinary-button">Upload files</button>
     {{!-- <script type="text/javascript">
@@ -40,14 +39,15 @@
       }, false);
     </script> --}}
   </form>
+  <br>
   <form id="newpost">
-  <div class="mb-3 w-75">
+  <div class="mb-8 w-200">
     <label for="titletext" class="form-label">Title of Project</label>
     <textarea class="form-control" id="titletext" rows="3"></textarea>
   </div>
   {{!-- <script src="./js/uploadFile.js"></script> --}}
-  
-  <div class="mb-3 w-75">
+  <br>
+  <div class="mb-3 w-200">
     <label for="descriptiontext" class="form-label">Leave a Description</label>
     <textarea class="form-control" id="descriptiontext" rows="3"></textarea>
   </div>
