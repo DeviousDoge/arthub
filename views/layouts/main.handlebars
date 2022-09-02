@@ -33,10 +33,10 @@
         {{#if logged_in}}
         {{!-- <a href="/profile">Upload</a>  --}}
         <div class="d-flex justify-content-end">
-        <button type="button" class="m-1 btn btn-primary" id="upload">Upload</button>
+        <a href="/profile" type="button" class="m-4 btn btn-primary" id="upload">Upload</button></a>
         <br>
         {{!-- <button class="no-button" id="logout">logout</button> --}}
-        <button type="button" class="m-1 btn btn-primary" id="logout">Logout</button>
+        <button type="button" class="m-4 btn btn-primary" id="logout">Logout</button>
         {{else}}
         <a href="/login">login</a>
         </div>
